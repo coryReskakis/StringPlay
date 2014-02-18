@@ -7,9 +7,23 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			while(true) {
+			//Display the main menu
+			System.out.println("*******************************************");
+			System.out.println("** Please choose an option below:        **");
+			System.out.println("** 1) Reverse a string.                  **");
+			System.out.println("** 2) Exit.                              **");
+			System.out.println("*******************************************");
 			input = br.readLine();
 			choice = Integer.parseInt(input);
-			System.out.println(choice);
+			switch(choice) {
+			//Reverse a string
+			case 1:
+				System.out.println("Please enter a string:");
+				String userInput = br.readLine();
+				//To be implemented... reverse a string algo
+			case 2:
+				System.exit(0);
+				}
 			}
 		}		
 		catch (Exception e) {
